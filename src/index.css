@@ -1,0 +1,292 @@
+.cardsDisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px hsla(0, 0%, 10%, 0.438);
+  text-align: center;
+  max-width: 250px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(162, 184, 224);
+}
+
+.card .cardpic {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.card .cardPicBox {
+  min-height: 60%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
+
+.card h2 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  min-height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 10%;
+}
+
+.card .button {
+  margin-bottom: 10px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 5px;
+}
+.card .button:hover {
+  background-color: hsl(271, 76%, 60%);
+  color: aliceblue;
+  cursor: pointer;
+}
+.card .button:active {
+  background-color: hsl(271, 76%, 40%);
+  color: aliceblue;
+}
+
+.friend-list {
+  border: 2px dashed black;
+  margin: 2px;
+  width: 70vw;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, 250px);
+  list-style: none;
+  align-content: center;
+  justify-content: center;
+}
+
+.user-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.message-box-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.384);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-box {
+  background-color: rgb(74, 143, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed red;
+  border-radius: 15px;
+  width: 70vw;
+  height: fit-content;
+  padding: 10px;
+}
+
+.message-box .close-button {
+  height: 25px;
+  width: 25px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-box .close-button:hover {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+.message-box .send {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: right;
+}
+
+.message-box .button-send-message {
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  margin: 2px;
+}
+
+.message-box .button-send-message:hover {
+  background-color: hsl(240, 100%, 60%);
+}
+
+.message-box-header {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-box textarea {
+  width: 60vw;
+  height: 20vh;
+  margin: 20px 5px;
+}
+
+.add-friend-box-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.384);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-friend-box {
+  background-color: rgb(74, 143, 245);
+  border: none;
+  border-radius: 15px;
+  width: 70vw;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-friend-box .add-friend-form {
+  background-color: rgb(130, 174, 240);
+  border: none;
+  border-radius: 15px;
+  width: 80%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-friend-box .close-button {
+  height: 25px;
+  width: 25px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-friend-box .close-button:hover {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+.add-friend-box input {
+  width: 80%;
+  margin: 5px;
+}
+
+.add-friend-box .send {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: right;
+}
+
+.add-friend-box .button-add-friend {
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  margin: 2px;
+}
+
+#add-friend-button {
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 3px;
+  margin: 2px;
+  margin-bottom: 10px;
+}
+
+#add-friend-button:hover {
+   background-color: hsl(240, 100%, 70%);
+}
+
+.add-friend-box .button-add-friend:hover {
+  background-color: hsl(240, 100%, 60%);
+}
+
+.add-friend-box-header {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  color: whitesmoke;
+  
+}
+
+.remove-friend-button {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-friend-button:hover {
+  background-color: rgb(0, 255, 255);
+  filter: invert();
+}
+
+.remove-friend-box {
+  border: 1px dashed black;
+  border-radius: 15px;
+  background-color: azure;
+  box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.4);
+  padding: 5px;
+  min-width: 150px;
+  max-width: 200px;
+  position:absolute;
+}
+
+.confirm-remove-container {
+  position: fixed;
+  inset: 0;
+  border: 2px dashed red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
